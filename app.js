@@ -1,15 +1,6 @@
-// ingredientes
-let nombre1 = "catalina perez";
-let nombre2 = "jorge perez";
-// prodeso manual
-/*console.log("Buenas tardes: "+ nombre1);
-console.log("Buenas tardes: "+ nombre2);*/
+let numero1=5;
+let numeroDos=10;
+let resultado=0;
+resultado = numero1 + numeroDos;
+console.log("El resultado es:  " +(numero1 + numeroDos));
 
-// proceso automático (FUNCTION)
-
-function saludarUsuario(nombreUsuario){
-    console.log("Buenas tardes: "+ nombreUsuario);
-}
-
-saludarUsuario(nombre1);
-saludarUsuario(nombre2);
