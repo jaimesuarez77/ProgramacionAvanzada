@@ -3,6 +3,11 @@ let coordenadaFinalX = 70;
 let coordenadaFinalY=-50;
 let coordenadaInicialX= 0;
 let coordenadaInicialY=0;
+let puntoInicial1 = 0;
+let puntoFinal1 = 70;
+let puntoInicial2 = 0;
+let puntoFinal2 = -50;
+
 
 //funcion
 function calcularDistancia(Xinicial, Xfinal, Yinicial,Yfinal){
@@ -29,16 +34,18 @@ function calcularDistancia(Xinicial, Xfinal, Yinicial,Yfinal){
 console.log(calcularDistancia(coordenadaInicialX,coordenadaFinalX,coordenadaInicialY,coordenadaFinalY));
 
 // función resumida
-function calcularDistancia1(Xinicial, Xfinal, Yinicial,Yfinal){
-    let distancia1= Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
-    console.log("la distancia es: " + distancia1);
+function calcularDistancia1(puntoInicial1, puntoFinal1, puntoInicial2,puntoFinal2){
+    let distancia1 = Math.round(Math.sqrt( Math.pow((puntoFinal1-puntoInicial1),2)+Math.pow((puntoFinal2-puntoInicial2),2)));
+   
+    console.log(`La distancia calculada con funcion tradicional ${distancia1}`);
     return(distancia1);
     
 }
+console.log(calcularDistancia1(puntoInicial1, puntoFinal1, puntoInicial2,puntoFinal2));
 
 
-//let distancia2 = (Xinicial, Xfinal, Yinicial,Yfinal)=> Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
-//console.log("la distancia es(flecha): " + distancia2);
+let distancia2 = (puntoInicial1, puntoFinal1, puntoInicial2,puntoFinal2)=> Math.sqrt(Math.pow((puntoFinal1-puntoInicial1),2)+Math.pow((puntoFinal2-puntoInicial2),2));
+console.log("la distancia es (tipoflecha): " + distancia2);
 
 
 
