@@ -27,15 +27,18 @@ function calcularDistancia(Xinicial, Xfinal, Yinicial,Yfinal){
 }
 
 console.log(calcularDistancia(coordenadaInicialX,coordenadaFinalX,coordenadaInicialY,coordenadaFinalY));
+
 // función resumida
 function calcularDistancia1(Xinicial, Xfinal, Yinicial,Yfinal){
     let distancia1= Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
     console.log("la distancia es: " + distancia1);
     return(distancia1);
+    
 }
 
-let distancia2=(Xinicial, Xfinal, Yinicial,Yfinal)=> Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
-console.log("la distancia es: " + distancia2);
+
+//let distancia2 = (Xinicial, Xfinal, Yinicial,Yfinal)=> Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
+//console.log("la distancia es(flecha): " + distancia2);
 
 
 
