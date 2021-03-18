@@ -7,8 +7,8 @@ let coordenadaInicialY=0;
 //funcion
 function calcularDistancia(Xinicial, Xfinal, Yinicial,Yfinal){
     //1.restando cantidades
-    let coordenadasX=xfinal-Xinicial;
-    let coordenadasY=yfinal-Yinicial;    
+    let coordenadasX=Xfinal-Xinicial;
+    let coordenadasY=Yfinal-Yinicial;    
 
     //2. Elevando al cuadrado cada resta
     let cuadradoX=Math.pow(coordenadasX,2);
@@ -24,9 +24,18 @@ function calcularDistancia(Xinicial, Xfinal, Yinicial,Yfinal){
 
     return(distancia);
 
-
-
 }
 
 console.log(calcularDistancia(coordenadaInicialX,coordenadaFinalX,coordenadaInicialY,coordenadaFinalY));
+// función resumida
+function calcularDistancia1(Xinicial, Xfinal, Yinicial,Yfinal){
+    let distancia1= Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
+    console.log("la distancia es: " + distancia1);
+    return(distancia1);
+}
+
+let distancia2=(Xinicial, Xfinal, Yinicial,Yfinal)=> Math.sqrt(Math.pow(Xfinal-Xinicial)+Math.pow(Yfinal-Yinicial));
+console.log("la distancia es: " + distancia2);
+
+
 
