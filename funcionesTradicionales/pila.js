@@ -1,16 +1,28 @@
+/*console.log("cero")
+
 
 function uno(){
     setTimeout(
         function(){
             console.log("uno");
-        },2000
+        },0
     );
     
 }
+console.log("dos");
+function tres(){
+    console.log("tres");
 
-function dos(){
-    console.log("dos");
-
+}*/
+function uno(auxiliar,dos){
+    setTimeout(function(){
+        console.log("uno"+auxiliar);
+        dos();
+    },2000);
+    
 }
-uno();
-dos();
+/*function dos(){
+    console.log("dos")
+
+}*/
+uno(5,function(){console.log("dos")});
