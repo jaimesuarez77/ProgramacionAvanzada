@@ -1,2 +1,2 @@
-# reto1
-reto programacion Avanzada
+# programacionAvanzada
+ ejercicios de clase
