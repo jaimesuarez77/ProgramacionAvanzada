@@ -14,7 +14,7 @@ function robarPlanos(idPlano,despegar){
 }
 
 
-robarPlanos(12,function(error, mensajeOK){
+robarPlanos(2,function(error, mensajeOK){
     if(error){
         console.log(error);
         console.log("Nos quedamos camellando");
