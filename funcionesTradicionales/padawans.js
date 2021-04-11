@@ -1,6 +1,8 @@
-let fuerza = "El padawan se asigna a las clases del manejo de la fuerza...";
+//let fuerza = "El padawan se asigna a las clases del manejo de la fuerza...";
+let fuerza = `El Padawan ${Padawan} se asigna a las clases de manejo de la fuerza...`;
 let sable = "El padawan esta listo para el manejo del 'sable de luz' ...";
 let limite = 15;
+
 function Padawan( planet, age, height) {
     this.planet = planet;
     this.age = age;
